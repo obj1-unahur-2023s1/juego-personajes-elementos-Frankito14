@@ -11,6 +11,10 @@ object floki {
 
 object mario {
 	var valorRecolectado = 0
+	method saludar()
+	{
+		return "Hola"
+	}
 
 }
 
