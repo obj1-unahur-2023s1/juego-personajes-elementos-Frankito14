@@ -1,0 +1,13 @@
+import armas.*
+import elementos.*
+import jugadoresPersonajes.*
+
+test "1" {
+	luisa.setPersonajeActivo(mario)
+	luisa.aparece(aurora)
+	luisa.aparece(castillo)
+	assert.equals(mario.valorRecolectado(), 45)
+	assert.equals(mario.estaFeliz(), true)
+	assert.equals(castillo.defensa(), 170)
+	
+}

@@ -10,8 +10,7 @@ object luisa {
 object floki {
 	var arma
 	method encontrar(elemento){
-		if(arma.estaCargada())
-		{
+		if(arma.estaCargada()){
 		arma.usar()
 		elemento.recibirAtaque(arma.potencia())
 		}
@@ -23,6 +22,7 @@ object floki {
 object mario {
 	var valorRecolectado = 0
 	var ultimaAltura = 0
+	method valorRecolectado() = valorRecolectado
 	method encontrar(elemento){
 		elemento.recibirTrabajo()
 		valorRecolectado += elemento.darValor()
