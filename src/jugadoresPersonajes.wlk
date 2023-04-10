@@ -24,8 +24,8 @@ object mario {
 	var ultimaAltura = 0
 	method valorRecolectado() = valorRecolectado
 	method encontrar(elemento){
-		elemento.recibirTrabajo()
 		valorRecolectado += elemento.darValor()
+		elemento.recibirTrabajo()
 		ultimaAltura = elemento.altura()
 	}
 	method estaFeliz(){return valorRecolectado>50 or ultimaAltura>10}

@@ -6,7 +6,7 @@ object castillo{
 		defensa -= potenciaAtaque
 	}
 	method recibirTrabajo(){
-		defensa = (defensa+=20).min(200)
+		defensa = (defensa+20).min(200)
 	}
 	method darValor(){
 		return defensa/5
